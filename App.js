@@ -1,21 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//telas
+import Atividades from './src/Screen/Atividades'
+import Contato from './src/Screen/Contato'
+import Home from './src/Screen/Home'
+import Hospedagens from './src/Screen/Hospedagens'
+import MinhaConta from './src/Screen/MinhaConta'
+import Notificacoes from './src/Screen/Notificacoes'
+import Ofertas from './src/Screen/Ofertas'
+import Pacotes from './src/Screen/Pacotes'
+import Voos from './src/Screen/Voos'
+import Index from './src/Screen/Index'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+//tools
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
+import {createBottomTabNavigator} from 'react-navigation-tabs'
+
+const navigator = createStackNavigator({
+  MenudeBaixo: createBottomTabNavigator ({
+    Home: Home,
+    Contato: Contato,  
+    Ofertas: Ofertas,
+    Notificacoes: Notificacoes,
+    MinhaConta: MinhaConta,
+  }),
+  Hospedagens: Hospedagens,
+  Atividades: Atividades,
+  Pacotes:Pacotes,
+  Voos: Voos,
+})
+
+export default createAppContainer(navigator)
+
+/*
+, {
+  initialRouteName: 'Home',
+  defaultNavigationOptions:{
+    title: 'tripApp'
+  } 
+  
+  
+  Hospedagens: Hospedagens,
+  Atividades: Atividades,
+  Pacotes:Pacotes,
+  Voos: Voos,
+}, {
+  initialRouteName: 'Home',
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  
+  
+  */
