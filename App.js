@@ -15,6 +15,14 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
+//icons
+import { Foundation, MaterialIcons, FontAwesome, Ionicons } from '@expo/vector-icons' 
+//<Foundation name="telephone" size={24} color="black" />
+//<FontAwesome name="exclamation" size={24} color="black" />
+//<Ionicons name="ios-notifications" size={24} color="black" />
+//<MaterialIcons name="person" size={24} color="black" />
+//<MaterialIcons name="airplanemode-active" size={24} color="black" />
+
 const navigator = createStackNavigator({
   MenudeBaixo: createBottomTabNavigator ({
     Home: Home,
@@ -29,23 +37,5 @@ const navigator = createStackNavigator({
   Voos: Voos,
 })
 
-export default createAppContainer(navigator)
 
-/*
-, {
-  initialRouteName: 'Home',
-  defaultNavigationOptions:{
-    title: 'tripApp'
-  } 
-  
-  
-  Hospedagens: Hospedagens,
-  Atividades: Atividades,
-  Pacotes:Pacotes,
-  Voos: Voos,
-}, {
-  initialRouteName: 'Home',
-}
-  
-  
-  */
+export default createAppContainer(navigator)
