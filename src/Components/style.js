@@ -11,13 +11,21 @@ const styles = StyleSheet.create({
         //backgroundColor: 'red',
     },
     texto:{
-        fontSize: 20,
+        fontSize: 30,
         color: 'blue',
     },
     button:{
         borderRadius: 20,
         backgroundColor: 'yellow',
-    }
+    },
+    image:{
+        width: 360,
+        height: 700,
+    },
+    logo:{
+        width:100,
+        height:100,
+    },
 })
 
 export default styles

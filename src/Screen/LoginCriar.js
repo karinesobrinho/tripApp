@@ -1,10 +1,11 @@
 import React from 'react'
 import {View, StyleSheet, Text, TouchableOpacity} from 'react-native'
 import { Input, Button } from 'react-native-elements'
+import styles from '../Components/style'
 
 const LoginCriar = ()=>{
     return(
-        <View>
+        <View style={styles.geral} >
             <Text>criar</Text>
             <Input placeholder='Nome'/>
             <Input placeholder='Sobrenome'/>
@@ -27,8 +28,6 @@ const LoginCriar = ()=>{
     )
 }
 
-const styles = StyleSheet.create({
-    
-})
+
 
 export default LoginCriar
