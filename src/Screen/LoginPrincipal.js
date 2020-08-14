@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, StyleSheet, Text, TouchableOpacity} from 'react-native'
 import { Button } from 'react-native-elements'
+import styles from '../Components/style'
 
 const LoginPrincipal = ({navigation})=>{
     return(
@@ -28,23 +29,6 @@ const LoginPrincipal = ({navigation})=>{
     )
 }
 
-const styles = StyleSheet.create({
-    geral:{
-        justifyContent: 'center',
-        flex: 1,
-        margin: 50,
-        //marginBottom: 200,
-        justifyContent: 'space-around',
-        //backgroundColor: 'red',
-    },
-    texto:{
-        fontSize: 30,
-        color: 'blue',
-    },
-    button:{
-        borderRadius: 20,
-        backgroundColor: 'yellow',
-    }
-})
+
 
 export default LoginPrincipal
