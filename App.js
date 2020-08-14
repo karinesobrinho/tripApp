@@ -1,3 +1,9 @@
+import React from 'react'
+//tools
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
+import {createBottomTabNavigator} from 'react-navigation-tabs'
+
 //telas
 import Atividades from './src/Screen/Atividades'
 import Contato from './src/Screen/Contato'
@@ -8,21 +14,57 @@ import Notificacoes from './src/Screen/Notificacoes'
 import Ofertas from './src/Screen/Ofertas'
 import Pacotes from './src/Screen/Pacotes'
 import Voos from './src/Screen/Voos'
-import Index from './src/Screen/Index'
+import LoginPrincipal from './src/Screen/LoginPrincipal'
 
-//tools
-import { createAppContainer } from 'react-navigation'
-import { createStackNavigator } from 'react-navigation-stack'
-import {createBottomTabNavigator} from 'react-navigation-tabs'
 
 //icons
-import { Foundation, MaterialIcons, FontAwesome, Ionicons } from '@expo/vector-icons' 
-//<Foundation name="telephone" size={24} color="black" />
-//<FontAwesome name="exclamation" size={24} color="black" />
-//<Ionicons name="ios-notifications" size={24} color="black" />
-//<MaterialIcons name="person" size={24} color="black" />
-//<MaterialIcons name="airplanemode-active" size={24} color="black" />
+import { Foundation, 
+  MaterialIcons, 
+  FontAwesome, 
+  Ionicons, 
+  Fontisto, 
+  MaterialCommunityIcons 
+} from '@expo/vector-icons' 
+import LoginCriar from './src/Screen/LoginCriar'
+import LoginAcesso from './src/Screen/LoginAcesso'
 
+/*
+menu de baixo
+<MaterialCommunityIcons name="earth" size={24} color="black" />
+<Foundation name="telephone" size={24} color="black" />
+<FontAwesome name="exclamation" size={24} color="black" />
+<Ionicons name="ios-notifications" size={24} color="black" />
+<MaterialIcons name="person" size={24} color="black" />
+
+menu de cima
+ <MaterialIcons name="airplanemode-active" size={24} color="black" />
+ <Fontisto name="hotel" size={24} color="black" />
+ <Fontisto name="suitcase" size={24} color="black" />
+ <Fontisto name="compass-alt" size={24} color="black" />
+ */
+
+const navigator = createStackNavigator({
+  App: createBottomTabNavigator ({
+    Home: Home,
+    Contato: Contato,  
+    Ofertas: Ofertas,
+    Notificacoes: Notificacoes,
+    MinhaConta: MinhaConta,
+  }),    
+  Login: LoginPrincipal,
+  Hospedagens: Hospedagens,
+  Atividades: Atividades,
+  Pacotes:Pacotes,
+  Voos: Voos,
+  Criar: LoginCriar,
+  Acesso: LoginAcesso,
+},{
+  initialRouteName:'Login'
+})
+
+export default createAppContainer(navigator)
+
+/*
 const navigator = createStackNavigator({
   MenudeBaixo: createBottomTabNavigator ({
     Home: Home,
@@ -36,6 +78,4 @@ const navigator = createStackNavigator({
   Pacotes:Pacotes,
   Voos: Voos,
 })
-
-
-export default createAppContainer(navigator)
+*/
