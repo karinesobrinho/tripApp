@@ -1,5 +1,6 @@
-import React from 'react'
 //tools
+import React from 'react'
+import {SafeAreaView} from 'react-native'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
@@ -41,7 +42,7 @@ menu de cima
  <Fontisto name="hotel" size={24} color="black" />
  <Fontisto name="suitcase" size={24} color="black" />
  <Fontisto name="compass-alt" size={24} color="black" />
- */
+*/
 
 const navigator = createStackNavigator({
   App: createBottomTabNavigator ({

@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, ImageBackground, Text} from 'react-native'
+import {View, ImageBackground, TouchableOpacity, Text, Image} from 'react-native'
 import { Input, Button } from 'react-native-elements'
 import styles from '../Components/style'
 
@@ -7,10 +7,15 @@ const LoginAcesso = (navigation)=>{
     return(
         <ImageBackground 
                 source={require('../images/img.jpg')} style={styles.image} >
-            <Image source={require('../images/cvc.png')} style={styles.logo}/>
             <View style={styles.geral} >
+            <Image source={require('../images/cvc.png')} style={styles.logo}/>
                 <Input placeholder='Email'/>
                 <Input placeholder='Senha'/>
+                <TouchableOpacity
+                    onPress={()=> navigation.navigate('Home')}                 
+                >
+                    <Text style = {styles.texto}  >Esqueci minha senha</Text>
+                </TouchableOpacity>  
                 <Button
                     buttonStyle = {styles.button}
                     title="Entrar"
@@ -21,6 +26,12 @@ const LoginAcesso = (navigation)=>{
         </ImageBackground>
        
     )
+}
+
+LoginAcesso.navigationOptions = () => {
+    return {
+      header: () => false,
+    }
 }
 
 export default LoginAcesso

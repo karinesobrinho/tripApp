@@ -7,8 +7,8 @@ const LoginCriar = (navigation)=>{
     return( 
         <ImageBackground 
             source={require('../images/img.jpg')} style={styles.image} >
+             <View style={styles.geral}> 
              <Image source={require('../images/cvc.png')} style={styles.logo}/>
-             <View style={styles.geral}>  
                 <Input placeholder='Nome'/>
                 <Input placeholder='Sobrenome'/>
                 <Input placeholder='CPF'/>
@@ -31,6 +31,10 @@ const LoginCriar = (navigation)=>{
     )
 }
 
-
+LoginCriar.navigationOptions = () => {
+    return {
+      header: () => false,
+    }
+}
 
 export default LoginCriar
