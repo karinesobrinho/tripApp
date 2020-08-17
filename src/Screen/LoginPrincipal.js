@@ -7,8 +7,8 @@ const LoginPrincipal = ({navigation})=>{
     return(
             <ImageBackground 
                 source={require('../images/img.jpg')} style={styles.image} >
+            <Image source={require('../images/cvc.png')} style={styles.logo}/>
             <View style={styles.geral} >
-                <Image source={require('../images/cvc.png')} style={styles.logo}/>
                 <Button
                     buttonStyle = {styles.button}
                     title="Entrar"
@@ -24,13 +24,11 @@ const LoginPrincipal = ({navigation})=>{
                 <TouchableOpacity
                     onPress={()=> navigation.navigate('Home')}                 
                 >
-                    <Text style = {styles.texto}  >Entrar como convidado</Text>
+                    <Text style = {styles.rodape}  >Entrar como convidado</Text>
                 </TouchableOpacity>  
                 </View>
             </ImageBackground>      
     )
 }
-
-
 
 export default LoginPrincipal

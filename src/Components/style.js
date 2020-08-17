@@ -5,10 +5,9 @@ const styles = StyleSheet.create({
     geral:{
         justifyContent: 'center',
         flex: 1,
+        //alignItems: 'center',
         margin: 50,
-        //marginBottom: 200,
         justifyContent: 'space-around',
-        //backgroundColor: 'red',
     },
     texto:{
         fontSize: 30,
@@ -21,11 +20,19 @@ const styles = StyleSheet.create({
     image:{
         width: 360,
         height: 700,
+        alignItems: 'center',
+        marginTop: 10,
     },
     logo:{
         width:100,
         height:100,
     },
+    rodape:{
+        justifyContent: 'flex-end',
+        fontSize: 20,
+        color: 'blue',
+        alignItems: 'center',
+    }
 })
 
 export default styles
