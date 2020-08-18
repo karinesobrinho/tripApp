@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button} from 'react-native'
 import styles from '../Components/style'
+import { MaterialCommunityIcons } from '@expo/vector-icons' 
 
 const Home = ({navigation})=>{
     return(
@@ -26,12 +27,8 @@ const Home = ({navigation})=>{
     )
 }
 
-Home.navigationOptions = () => {
-    return {
-      header: ()=>
-       <Image source={require('../images/cvc.png')} style={styles.miniLogo}/>,
-    }
+Home.navigationOptions = {
+   tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="red"/>
 }
-
 
 export default Home

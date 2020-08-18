@@ -16,7 +16,8 @@ import Ofertas from './src/Screen/Ofertas'
 import Pacotes from './src/Screen/Pacotes'
 import Voos from './src/Screen/Voos'
 import LoginPrincipal from './src/Screen/LoginPrincipal'
-
+import LoginCriar from './src/Screen/LoginCriar'
+import LoginAcesso from './src/Screen/LoginAcesso'
 
 //icons
 import { Foundation, 
@@ -26,8 +27,7 @@ import { Foundation,
   Fontisto, 
   MaterialCommunityIcons 
 } from '@expo/vector-icons' 
-import LoginCriar from './src/Screen/LoginCriar'
-import LoginAcesso from './src/Screen/LoginAcesso'
+
 
 /*
 menu de baixo
