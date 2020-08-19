@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
     texto:{
         fontSize: 19,
-        color: 'blue',
+        color: '#0066FF',
         alignItems: 'center',
     },
     button:{
@@ -31,13 +31,17 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         alignItems: 'center',
+        //position: 'absolute',
     },
     rodape:{
         justifyContent: 'flex-end',
-        fontSize: 20,
-        color: 'blue',
         alignItems: 'center',
-    }
+        marginBottom: 20,
+        fontSize: 20,
+        color: '#0066FF',
+        alignItems: 'center',
+    },
+
 })
 
 export default styles

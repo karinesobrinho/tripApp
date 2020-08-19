@@ -11,7 +11,7 @@ const Ofertas = ()=>{
 }
 
 Ofertas.navigationOptions = {
-    tabBarIcon:  <FontAwesome name="exclamation" size={24} color="black" />
+    tabBarIcon:  <FontAwesome name="exclamation" size={24} color="gray" />
  }
 
 const styles = StyleSheet.create({})

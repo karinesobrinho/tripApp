@@ -11,7 +11,7 @@ const Contato = ()=>{
 }
 
 Contato.navigationOptions = {
-    tabBarIcon: <Foundation name="telephone" size={24} color="black" />
+    tabBarIcon: <Foundation name="telephone" size={24} color="gray" />
 }
 
 export default Contato

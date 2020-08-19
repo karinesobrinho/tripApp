@@ -21,12 +21,12 @@ const LoginPrincipal = ({navigation})=>{
                     type = 'outline'
                     onPress = {()=> navigation.navigate('Criar')}
                 />
-                <TouchableOpacity
+                </View>
+                <TouchableOpacity style = {styles.rodape}
                     onPress={()=> navigation.navigate('Home')}                 
                 >
-                    <Text style = {styles.texto}  >Entrar como convidado</Text>
+                    <Text style = {styles.rodape}  >Entrar como convidado</Text>
                 </TouchableOpacity>  
-                </View>
             </ImageBackground>      
     )
 }

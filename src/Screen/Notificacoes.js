@@ -13,7 +13,7 @@ const Notificacoes = ()=>{
 const styles = StyleSheet.create({})
 
 Notificacoes.navigationOptions = {
-    tabBarIcon:  <Ionicons name="ios-notifications" size={24} color="black" />
+    tabBarIcon:  <Ionicons name="ios-notifications" size={24} color="gray" />
 }
 
 export default Notificacoes

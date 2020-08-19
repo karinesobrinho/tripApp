@@ -13,7 +13,7 @@ const MinhaConta = ()=>{
 const styles = StyleSheet.create({})
 
 MinhaConta.navigationOptions = {
-    tabBarIcon:  <MaterialIcons name="person" size={24} color="black" />
+    tabBarIcon:  <MaterialIcons name="person" size={24} color="gray" />
 }
 
 export default MinhaConta
