@@ -13,8 +13,16 @@ const Home = ({navigation})=>{
     )
 }
 
-Home.navigationOptions = {
-   tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="gray"/>
+/*Home.navigationOptions = () => {
+    return {
+      header: () => false,
+} */
+
+Home.navigationOptions = ()=> {
+    return {
+        header: () => false,
+        tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="gray"/>
+    }
 }
 
 export default Home

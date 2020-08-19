@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         alignItems: 'center',
-        //position: 'absolute',
     },
     rodape:{
         justifyContent: 'flex-end',

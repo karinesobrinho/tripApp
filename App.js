@@ -18,6 +18,7 @@ import Voos from './src/Screen/Voos'
 import LoginPrincipal from './src/Screen/LoginPrincipal'
 import LoginCriar from './src/Screen/LoginCriar'
 import LoginAcesso from './src/Screen/LoginAcesso'
+import Carregando from './src/Screen/Carregando'
 
 //icons
 import { Foundation, 
@@ -52,6 +53,7 @@ const navigator = createStackNavigator({
     Notificacoes: Notificacoes,
     MinhaConta: MinhaConta,
   }),    
+  Carregando: Carregando,
   Login: LoginPrincipal,
   Hospedagens: Hospedagens,
   Atividades: Atividades,
@@ -60,7 +62,7 @@ const navigator = createStackNavigator({
   Criar: LoginCriar,
   Acesso: LoginAcesso,
 },{
-  initialRouteName:'Login'
+  initialRouteName:'Carregando'
 })
 
 export default createAppContainer(navigator)
