@@ -56,7 +56,7 @@ const styleHeader = StyleSheet.create({
         alignItems:'center',
     },
     box:{
-         backgroundColor: 'white',
+        backgroundColor: 'white',
         shadowColor: 'black',
     },
 })

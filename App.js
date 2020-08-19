@@ -5,6 +5,8 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
+import Header from './src/Components/Header'
+
 //telas
 import Atividades from './src/Screen/Atividades'
 import Contato from './src/Screen/Contato'
@@ -46,39 +48,32 @@ menu de cima
 */
 
 const navigator = createStackNavigator({
-  App: createBottomTabNavigator ({
+  Carregando: Carregando,
+  Login: LoginPrincipal, 
+  Criar: LoginCriar,
+  Acesso: LoginAcesso,
+  Hospedagens: Hospedagens,
+  Atividades: Atividades,
+  Pacotes:Pacotes,
+  Voos: Voos,
+  menu: createBottomTabNavigator ({
     Home: Home,
     Contato: Contato,  
     Ofertas: Ofertas,
     Notificacoes: Notificacoes,
     MinhaConta: MinhaConta,
   }),    
-  Carregando: Carregando,
-  Login: LoginPrincipal,
-  Hospedagens: Hospedagens,
-  Atividades: Atividades,
-  Pacotes:Pacotes,
-  Voos: Voos,
-  Criar: LoginCriar,
-  Acesso: LoginAcesso,
+  
 },{
-  initialRouteName:'Carregando'
+  initialRouteName:'Carregando',    
+  defaultNavigationOptions: {
+      title: 'Application Name',
+      header: ()=> <Header/> ,
+      headerStyle: {
+        backgroundColor: 'white',
+      },
+      headerTintColor: '#606070',
+  },
 })
 
 export default createAppContainer(navigator)
-
-/*
-const navigator = createStackNavigator({
-  MenudeBaixo: createBottomTabNavigator ({
-    Home: Home,
-    Contato: Contato,  
-    Ofertas: Ofertas,
-    Notificacoes: Notificacoes,
-    MinhaConta: MinhaConta,
-  }),
-  Hospedagens: Hospedagens,
-  Atividades: Atividades,
-  Pacotes:Pacotes,
-  Voos: Voos,
-})
-*/
