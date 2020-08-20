@@ -1,19 +1,30 @@
 import React from 'react'
-import {View, StyleSheet, Text} from 'react-native'
+import {View, StyleSheet, TouchableOpacity, Text} from 'react-native'
 import { MaterialIcons} from '@expo/vector-icons' 
+import styles from '../Components/style'
 
-const MinhaConta = ()=>{
+const MinhaConta = ({navigation})=>{
     return(
-        <View>
-            <Text>MinhaConta</Text>
+        <View style={styles.box} >
+            <TouchableOpacity
+                //onPress = {()=> navigation.navigate('Login')}
+                style={styles.botao}
+            >
+                <MaterialIcons name="person" size={32} color="#0066FF" />
+                <Text style={styles.text} >Iniciar sessão</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.botao}
+            >
+                <MaterialIcons name="settings" size={32} color="#0066FF" />
+                <Text style={styles.text} >Ajustes</Text>
+            </TouchableOpacity>
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
-
 MinhaConta.navigationOptions = {
-    tabBarIcon:  <MaterialIcons name="person" size={24} color="gray" />
+    tabBarIcon: <MaterialIcons name="person" size={24} color="gray" />
 }
 
 export default MinhaConta
