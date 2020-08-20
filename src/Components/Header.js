@@ -3,10 +3,12 @@ import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView,TouchableOpacity
 import styles from './style'
 import { MaterialIcons, Fontisto } from '@expo/vector-icons' 
 import { withNavigation } from 'react-navigation'
+import { StatusBar } from 'react-native'
 
 const Header = ({navigation})=>{
     return(
         <SafeAreaView style={styleHeader.box} > 
+            <StatusBar style={styleHeader.box} />
             <View style={styleHeader.logo} >
                 <Image source={require('../images/cvc.png')} style={styles.miniLogo} />
             </View>
@@ -57,7 +59,6 @@ const styleHeader = StyleSheet.create({
     },
     box:{
         backgroundColor: 'white',
-        shadowColor: 'black',
     },
 })
 

@@ -66,14 +66,14 @@ const navigator = createStackNavigator({
   
 },{
   initialRouteName:'Carregando',    
-  defaultNavigationOptions: {
+  /*defaultNavigationOptions: {
       title: 'Application Name',
       header: ()=> <Header/> ,
       headerStyle: {
         backgroundColor: 'white',
       },
       headerTintColor: '#606070',
-  },
+  },*/
 })
 
 export default createAppContainer(navigator)

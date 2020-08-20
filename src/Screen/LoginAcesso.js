@@ -28,6 +28,7 @@ const LoginAcesso = (navigation)=>{
     )
 }
 
+
 LoginAcesso.navigationOptions = () => {
     return {
       header: () => false,
