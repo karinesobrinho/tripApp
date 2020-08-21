@@ -1,14 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {View, StyleSheet, Text} from 'react-native'
+import PesquisarVoos from '../Components/PesquisarVoos'
+import styles from '../Components/style'
 
-const Voos = ()=>{
-    return(
+const Voos = () => {
+    return (
+        <>
         <View>
-            <Text>Voos</Text>
+            <PesquisarVoos />
         </View>
-    )
+        </>
+    );
 }
 
-const styles = StyleSheet.create({})
-
+Voos.navigationOptions = () => {
+    return {
+      header: () => false,
+    }
+}
 export default Voos

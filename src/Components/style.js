@@ -47,6 +47,33 @@ const styles = StyleSheet.create({
         color: '#0066FF',
         alignItems: 'center',
     },
+    container: {
+        backgroundColor: '#eeeeee',
+        flexDirection: 'row',
+        justifyContent: 'center'
+    },
+    card: {
+        backgroundColor: 'white',
+        height: 100,
+        width: 250,
+        borderRadius: 5,
+        marginTop: 20,
+        marginHorizontal: 15,
+        alignContent: 'space-around',
+        justifyContent: 'space-between',
+        alignSelf: 'center',
+        alignContent: 'space-around',
+        flex: 1
+    },
+    swap: {
+        backgroundColor: 'white',
+        fontSize: 35,
+        borderRadius: 100,
+        borderColor: 'blue',
+        borderWidth: 2,
+        alignSelf: 'center',
+        position: 'absolute'
+    },
     alternativeHeader:{
         fontSize: 30,
         alignItems: 'center',

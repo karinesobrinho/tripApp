@@ -1,0 +1,90 @@
+[
+  {
+      "voos" : {
+        "LATAM" : {
+          "00001" : {
+            "local-destino" : "São Paulo",
+            "local-partida" : "Maceió",
+            "data-partida" : "02/02/2021",
+            "data-chegada" : "02//02/2021",
+            "escala" : "null",
+            "escalas" : "null",
+            "vagas-business" : "30",
+            "valor-business" : "160.00",
+            "vagas-premium" : "25",
+            "valor-premium" : "200.00",
+            "vagas-primeira-classe" : "30",
+            "valor-primeira-classe" : "160.00",
+            "vagas-turista" : "60",
+            "valor-turista" : "110.00"
+          },
+          "00002" : {
+            "local-destino" : "Pernambuco",
+            "local-partida" : "São Paulo",
+            "data-partida" : "04/02/2021",
+            "data-chegada" : "04/02/2021",
+            "escala" : "null",
+            "escalas" : "null",
+            "vagas-business" : "30",
+            "valor-business" : "169.00",
+            "vagas-premium" : "25",
+            "valor-premium" : "230.00",
+            "vagas-primeira-classe" : "30",
+            "valor-primeira-classe" : "200.00",
+            "vagas-turista" : "60",
+            "valor-turista" : "150.00"
+          }
+        },
+        "Gol" : {
+          "00001" : {
+            "local-destino" : "São Paulo",
+            "local-partida" : "Maceió",
+            "data-partida" : "string",
+            "data-chegada" : "string",
+            "escala" : "null",
+            "escalas" : "null",
+            "vagas-business" : "30",
+            "valor-business" : "169.00",
+            "vagas-premium" : "25",
+            "valor-premium" : "230.00",
+            "vagas-primeira-classe" : "30",
+            "valor-primeira-classe" : "200.00",
+            "vagas-turista" : "60",
+            "valor-turista" : "150.00"
+          },
+          "00002" : {
+            "local-destino" : "Pernambuco",
+            "local-partida" : "São Paulo",
+            "data-partida" : "04/02/2021",
+            "data-chegada" : "04/02/2021",
+            "escala" : "null",
+            "escalas" : "null",
+            "vagas-business" : "30",
+            "valor-business" : "169.00",
+            "vagas-premium" : "25",
+            "valor-premium" : "230.00",
+            "vagas-primeira-classe" : "30",
+            "valor-primeira-classe" : "200.00",
+            "vagas-turista" : "60",
+            "valor-turista" : "150.00"
+          },
+          "00003" : {
+            "local-destino" : "São Paulo",
+            "local-partida" : "Maceió",
+            "data-partida" : "02/02/2021",
+            "data-chegada" : "02//02/2021",
+            "escala" : "null",
+            "escalas" : "null",
+            "vagas-business" : "30",
+            "valor-business" : "160.00",
+            "vagas-premium" : "25",
+            "valor-premium" : "200.00",
+            "vagas-primeira-classe" : "30",
+            "valor-primeira-classe" : "160.00",
+            "vagas-turista" : "60",
+            "valor-turista" : "110.00"
+          }
+        }
+      }
+    }
+]

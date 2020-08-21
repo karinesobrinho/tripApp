@@ -10,15 +10,4 @@ const Hospedagens = ()=>{
     )
 }
 
-/**
- * Hospedagens.navigationOptions = {
-    //To set the header image and title for the current Screen
-    title: 'Hospedagens',
-    headerStyle: {
-      backgroundColor: 'white',
-    },
-    headerTintColor: 'black',
-}
- */
-
 export default Hospedagens
