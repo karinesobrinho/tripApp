@@ -48,10 +48,12 @@ menu de cima
 */
 
 const navigator = createStackNavigator({
+  //telas de login
   Carregando: Carregando,
   Login: LoginPrincipal, 
   Criar: LoginCriar,
   Acesso: LoginAcesso,
+  //menu de cima
   Hospedagens: Hospedagens,
   Atividades: Atividades,
   Pacotes:Pacotes,
@@ -60,20 +62,29 @@ const navigator = createStackNavigator({
     Home: Home,
     Contato: Contato,  
     Ofertas: Ofertas,
-    Notificacoes: Notificacoes,
+    Notificações: Notificacoes,
     MinhaConta: MinhaConta,
+  }, {
+    tabBarOptions: {
+      activeTintColor: '#009999',
+      labelStyle: {
+        fontSize: 11,
+      },
+      style: {
+        backgroundColor: 'white',
+        height: 70,
+        marginBottom: 12,
+        paddingVertical:4,
+        paddingRight: 5,
+        justifyContent: 'space-between',
+      },
+    }
   }),    
-  
 },{
   initialRouteName:'Carregando',    
-  /*defaultNavigationOptions: {
-      title: 'Application Name',
-      header: ()=> <Header/> ,
-      headerStyle: {
-        backgroundColor: 'white',
-      },
-      headerTintColor: '#606070',
-  },*/
+  defaultNavigationOptions: {
+      header: ()=> false,
+  },
 })
 
 export default createAppContainer(navigator)
