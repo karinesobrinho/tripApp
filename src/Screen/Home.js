@@ -6,21 +6,75 @@ import Header from '../Components/Header'
 
 const Home = ({navigation})=>{
     return(
+        <SafeAreaView>
         <View>
-            <Text>Home</Text>
+            <Header/>
         </View>
+        <ScrollView>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+            <Text styles={styles.texto} >Home</Text>
+        </ScrollView>
+    </SafeAreaView>
     )
 }
 
-/*Home.navigationOptions = () => {
+/*
+Home.navigationOptions = () => {
     return {
-      header: () => false,
-} */
+        header: () => false,
+    }
+} 
+ */
 
 Home.navigationOptions = ()=> {
     return {
+        header: () => false,
         tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="gray"/>
     }
 }
+
 
 export default Home

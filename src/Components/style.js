@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         fontSize: 19,
         color: '#0066FF',
         alignItems: 'center',
+        margin: 5,
     },
     button:{
         borderRadius: 20,
@@ -28,14 +29,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     miniLogo:{
-        width: 50,
-        height: 50,
+        width: 60,
+        height: 60,
         alignItems: 'center',
+        margin: 5,
     },
     rodape:{
         justifyContent: 'flex-end',
         alignItems: 'center',
-        marginBottom: 20,
+        marginBottom: 25,
         fontSize: 20,
         color: '#0066FF',
         alignItems: 'center',
@@ -66,7 +68,27 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         alignSelf: 'center',
         position: 'absolute'
-    }
+    },
+    alternativeHeader:{
+        fontSize: 30,
+        alignItems: 'center',
+        backgroundColor: 'white',
+    },
+    box:{
+        backgroundColor: 'white',
+    },
+    botao:{
+        flexDirection: 'row',
+        //justifyContent: 'space-between',
+        alignItems: 'center',
+        margin: 5,
+        marginLeft: 10,
+    },
+    text:{
+        fontSize: 20,
+        margin: 5,
+        marginLeft: 10,
+    },
 
 })
 
