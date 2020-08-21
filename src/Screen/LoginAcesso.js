@@ -20,19 +20,12 @@ const LoginAcesso = (navigation)=>{
                     buttonStyle = {styles.button}
                     title="Entrar"
                     type = 'outline'
-                    onPress = {()=> navigation.navigate('Home')}
+                    onPress = {()=> navigation.navigate('Iniciar')}
                 /> 
             </View>
         </ImageBackground>
        
     )
-}
-
-
-LoginAcesso.navigationOptions = () => {
-    return {
-      header: () => false,
-    }
 }
 
 export default LoginAcesso

@@ -61,17 +61,8 @@ const Home = ({navigation})=>{
     )
 }
 
-/*
-Home.navigationOptions = () => {
-    return {
-        header: () => false,
-    }
-} 
- */
-
 Home.navigationOptions = ()=> {
     return {
-        header: () => false,
         tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="gray"/>
     }
 }

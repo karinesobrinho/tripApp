@@ -23,18 +23,12 @@ const LoginPrincipal = ({navigation})=>{
                 />
                 </View>
                 <TouchableOpacity style = {styles.rodape}
-                    onPress={()=> navigation.navigate('Home')}                 
+                    onPress={()=> navigation.navigate('Iniciar')}                 
                 >
                     <Text style = {styles.rodape}  >Entrar como convidado</Text>
                 </TouchableOpacity>  
             </ImageBackground>      
     )
-}
-
-LoginPrincipal.navigationOptions = () => {
-    return {
-      header: () => false,
-    }
 }
 
 export default LoginPrincipal

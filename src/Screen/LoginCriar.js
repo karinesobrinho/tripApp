@@ -18,7 +18,7 @@ const LoginCriar = (navigation)=>{
                     buttonStyle = {styles.button}
                     title="Criar conta"
                     type = 'outline'
-                    onPress = {()=> navigation.navigate('Home')}
+                    onPress = {()=> navigation.navigate('Iniciar')}
                 />
                 <Text style = {styles.texto}>Ao se associar você aceita os</Text>
                 <TouchableOpacity
@@ -29,12 +29,6 @@ const LoginCriar = (navigation)=>{
             </View>
         </ImageBackground>  
     )
-}
-
-LoginCriar.navigationOptions = () => {
-    return {
-      header: () => false,
-    }
 }
 
 export default LoginCriar

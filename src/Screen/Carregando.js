@@ -10,7 +10,7 @@ const Carregando = ({navigation})=>{
             <ImageBackground 
                 source={require('../images/img.jpg')} style={styles.image} >
             <View style={styles.geral} >
-                <Image source={require('../images/cvc.png')} style={styles.logo}/>
+                <Image source={require('../images/cvc.png')} style={styles.carregando}/>
             </View> 
             </ImageBackground>      
         </TouchableOpacity>

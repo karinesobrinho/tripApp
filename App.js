@@ -59,11 +59,11 @@ const navigator = createStackNavigator({
   Pacotes:Pacotes,
   Voos: Voos,
   menu: createBottomTabNavigator ({
-    Home: Home,
+    Iniciar: Home,
     Contato: Contato,  
     Ofertas: Ofertas,
     Notificações: Notificacoes,
-    MinhaConta: MinhaConta,
+    'Minha conta': MinhaConta,
   }, {
     tabBarOptions: {
       activeTintColor: '#009999',

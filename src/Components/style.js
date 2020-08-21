@@ -24,8 +24,13 @@ const styles = StyleSheet.create({
         height: 800,
     },
     logo:{
-        width:100,
-        height:100,
+        width: 100,
+        height: 100,
+        alignItems: 'center',
+    },
+    carregando:{
+        width: 170,
+        height: 170,
         alignItems: 'center',
     },
     miniLogo:{
@@ -61,6 +66,17 @@ const styles = StyleSheet.create({
         fontSize: 20,
         margin: 5,
         marginLeft: 10,
+    },
+    headerBox:{
+        backgroundColor: 'white',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+        elevation: 8,
     },
 })
 
