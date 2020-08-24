@@ -13,13 +13,14 @@ const Contato = ()=>{
             </View>
             <View style={styleContatos.box} >
                 <Image source={require('../images/telefone.png')} style={styleContatos.telefone} />
-            </View>
-            <View style={styleContatos.boxside}>
+                        <View style={styleContatos.boxside}>
                 <Text style={styleContatos.text1} >Vendas (11-3003-9282)</Text>
                 <Text style={styleContatos.text2} >De seg a sex das 8h às 22h</Text>
                 <Text style={styleContatos.text2} >Sáb das 9h às 21h</Text>
                 <Text style={styleContatos.text2} >Dom e feriados das 10h às 15h</Text>
             </View>
+            </View>
+
             <View style={styleContatos.box} >
                 <Text style={styleContatos.text3} > Siga nos em </Text>
                 <Image source={require('../images/facebook.png')} style={styleContatos.redes} />
@@ -47,9 +48,6 @@ const styleContatos = StyleSheet.create({
     },
     boxside:{
         backgroundColor: 'white',
-        marginLeft: 102,
-        position: 'absolute',
-        marginTop: 15,
         padding: 5,
     },
     text1:{

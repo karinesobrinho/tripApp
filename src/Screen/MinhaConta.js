@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, StyleSheet, TouchableOpacity, Text} from 'react-native'
+import {View, TouchableOpacity, Text} from 'react-native'
 import { MaterialIcons} from '@expo/vector-icons' 
 import styles from '../Components/style'
 import MenuHeader from '../Components/MenuHeader'
