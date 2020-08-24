@@ -13,12 +13,18 @@ const Home = ({navigation})=>{
             <ScrollView>
                 <Image source={require('../images/home.png')} style={homeStyle.image1} />
                 <Text style={homeStyle.texto1} >Aproveite as nossas promoções para planejar sua viagem </Text>
-                <View>
-                    <Text style={homeStyle.texto1} >Encontre o melhor preço para seu voo </Text>
+                <View style={homeStyle.row} >
+                    <View>
+                        <Text style={homeStyle.texto1} >Encontre o melhor preço</Text>
+                        <Text style={homeStyle.texto1} >para o seu voo</Text>
+                    </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                <View>
-                    <Text style={homeStyle.texto1} >Desfrute da sua acomodação a um excelente preço! </Text>
+                <View style={homeStyle.row} >
+                    <View>
+                        <Text style={homeStyle.texto1} >Desfrute da sua acomodação a </Text>
+                        <Text style={homeStyle.texto1} >um excelente preço! </Text>
+                    </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
                 <Text styles={styles.texto} >Home</Text>
@@ -81,11 +87,18 @@ const homeStyle = StyleSheet.create({
     },
     texto1:{
         fontSize: 18,
-        margin: 10,
+        //margin: 10,
     },
     texto2:{
-        color: 'blue',
+        color: '#0066FF',
         fontSize: 15,
+        margin: 2,
+    },
+    row:{
+        margin: 10,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
     }
 
 })
