@@ -3,10 +3,14 @@ import {View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native'
 import { Foundation, AntDesign } from '@expo/vector-icons' 
 import { SafeAreaView } from 'react-navigation'
 import styles from '../Components/style'
+import MenuHeader from '../Components/MenuHeader'
 
 const Contato = ()=>{
     return(
-        <SafeAreaView>
+        <View>
+            <View>
+                <MenuHeader title='Entre em contato'/>
+            </View>
             <View style={styleContatos.box} >
                 <Image source={require('../images/telefone.png')} style={styleContatos.telefone} />
             </View>
@@ -29,7 +33,7 @@ const Contato = ()=>{
                     <Text style={styles.texto} >ENTRE NO NOSSO SITE</Text>
                 </TouchableOpacity>
             </View>
-        </SafeAreaView>
+        </View>
     )
 }
 
@@ -70,13 +74,13 @@ const styleContatos = StyleSheet.create({
         height: 100,
     },
     redes:{
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
         borderRadius: 5,
     },
     yt:{
-        height:50,
-        width: 65,
+        height:40,
+        width: 58,
         borderRadius: 5,
     },
 })

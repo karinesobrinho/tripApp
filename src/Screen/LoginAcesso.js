@@ -12,7 +12,7 @@ const LoginAcesso = (navigation)=>{
                 <Input placeholder='Email'/>
                 <Input placeholder='Senha'/>
                 <TouchableOpacity
-                    onPress={()=> navigation.navigate('Home')}                 
+                    onPress={()=> navigation.navigate('Iniciar')}                 
                 >
                     <Text style = {styles.texto}  >Esqueci minha senha</Text>
                 </TouchableOpacity>  

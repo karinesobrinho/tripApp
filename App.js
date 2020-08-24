@@ -22,31 +22,6 @@ import LoginCriar from './src/Screen/LoginCriar'
 import LoginAcesso from './src/Screen/LoginAcesso'
 import Carregando from './src/Screen/Carregando'
 
-//icons
-import { Foundation, 
-  MaterialIcons, 
-  FontAwesome, 
-  Ionicons, 
-  Fontisto, 
-  MaterialCommunityIcons 
-} from '@expo/vector-icons' 
-
-
-/*
-menu de baixo
-<MaterialCommunityIcons name="earth" size={24} color="black" />
-<Foundation name="telephone" size={24} color="black" />
-<FontAwesome name="exclamation" size={24} color="black" />
-<Ionicons name="ios-notifications" size={24} color="black" />
-<MaterialIcons name="person" size={24} color="black" />
-
-menu de cima
- <MaterialIcons name="airplanemode-active" size={24} color="black" />
- <Fontisto name="hotel" size={24} color="black" />
- <Fontisto name="suitcase" size={24} color="black" />
- <Fontisto name="compass-alt" size={24} color="black" />
-*/
-
 const navigator = createStackNavigator({
   //telas de login
   Carregando: Carregando,
@@ -73,7 +48,8 @@ const navigator = createStackNavigator({
       style: {
         backgroundColor: 'white',
         height: 70,
-        marginBottom: 12,
+        borderBottom: 12,
+        borderColor:'white',
         paddingVertical:4,
         paddingRight: 5,
         justifyContent: 'space-between',
