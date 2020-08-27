@@ -1,19 +1,38 @@
 import React, {useState} from 'react'
-import { View, TextInput, TouchableOpacity } from 'react-native'
+import { View, TextInput, Button, Text} from 'react-native'
 import styles from './style'
 import { Ionicons } from '@expo/vector-icons'
-import dados from './voos.json'
+const dados = require('./voos.json')
 
-const PesquisarVoos = () => {
+const swap = () => {console.log('swap')}
+
+const PesquisarVoos = ({ term, onTermChange, onTermSubmit, navigation }) => {
+     //const [partida, localpartida] = useState['']
+     //const [destino, localdestino] = useState['']
   
     return (
         <>
         <View style={styles.container}>
-            <TextInput style={styles.card} placeholder="Saio de..." />
+            <TextInput 
+                style={styles.card} 
+                placeholder="Saio de..."
+
+            />
             <TextInput style={styles.card} placeholder="Vou para..." />
-            <Ionicons name="ios-swap" style={styles.swap} />
+            <Ionicons
+                name="ios-swap"
+                style={styles.swap}
+                onPress={() => swap()}
+            />
             
             <TextInput />
+        </View>
+        <View>
+            <Button
+                title="Proxima Tela"
+                style={styles.botao}
+                onPress={() => navigation.navigate('ResultadosVoos')} 
+            />
         </View>
         </>
     )

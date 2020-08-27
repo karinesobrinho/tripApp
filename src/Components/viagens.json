@@ -1,45 +1,92 @@
-{
-    "voos": [
-        {
-            "titulo":"Voo para Maceió",
-            "partida": "De São Paulo",
-            "image": "../images/aviao.jpeg",
-            "valor":"1300",
-            "icon":"aviao"
-        },
-        {
-            "titulo":"Voo para Recife",
-            "partida": "De São Paulo",
-            "image": "../images/aviao.jpeg",
-            "valor":"1400",
-            "icon":"aviao"
-        },
-        {
-            "titulo":"Voo para Miami",
-            "partida": "De São Paulo",
-            "image": "image",
-            "valor":"2000",
-            "icon":"aviao"
-        }
-    ],
-    "hoteis": [
-        {
-            "titulo":"Hoteis em Maceió",
-            "image": "image",
-            "valor":"130",
-            "icon":"hotel"
-        },
-        {
-            "titulo":"Voo para Recife",
-            "image": "image",
-            "valor":"140",
-            "icon":"hotel"
-        },
-        {
-            "titulo":"Voo para Miami",
-            "image": "image",
-            "valor":"200",
-            "icon":"hotel"
-        }
-    ]
-}
+[{
+    "viagens": {
+        "voos": [
+            {
+                "titulo":"Voo para Maceió",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"1300",
+                "icon":"aviao"
+            },
+            {
+                "titulo":"Voo para Recife",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"1400",
+                "icon":"aviao"
+            },
+            {
+                "titulo":"Voo para Cancun",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"1400",
+                "icon":"aviao"
+            },
+            {
+                "titulo":"Voo para Orlando",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"1400",
+                "icon":"aviao"
+            },
+            {
+                "titulo":"Voo para Paris",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"1400",
+                "icon":"aviao"
+            },
+            {
+                "titulo":"Voo para Miami",
+                "partida": "De São Paulo",
+                "image": "../images/aviao.jpeg",
+                "valor":"2000",
+                "icon":"aviao"
+            }
+        ],
+        "hoteis": [
+            {
+                "titulo":"Hoteis em Maceió",
+                "image": "../images/hotel.jpg",
+                "valor":"130",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Recife",
+                "image": "../images/hotel.jpg",
+                "valor":"130",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Orlando",
+                "image": "../images/hotel.jpg",
+                "valor":"130",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Cancun",
+                "image": "../images/hotel.jpg",
+                "valor":"130",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Paris",
+                "image": "../images/hotel.jpg",
+                "valor":"130",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Bali",
+                "image": "../images/hotel.jpg",
+                "valor":"140",
+                "icon":"hotel"
+            },
+            {
+                "titulo":"Hoteis em Miami",
+                "image": "../images/hotel.jpg",
+                "valor":"200",
+                "icon":"hotel"
+            }
+        ]
+    }
+}]

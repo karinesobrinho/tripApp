@@ -4,6 +4,9 @@ import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
 
+const viagens = require('../Components/viagens.json')
+console.log(viagens)
+
 const Home = ({navigation})=>{
     return(
         <>
