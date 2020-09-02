@@ -30,6 +30,7 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
+                <Image source={{uri: viagens.image}} />
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
@@ -114,3 +115,12 @@ Home.navigationOptions = ()=> {
 
 
 export default Home
+
+/**
+ const resultados = async resul =>{
+    try{
+        const response = await viagens.get('../Components/viagens.json')
+    }
+    catch(err)
+ }
+ */
