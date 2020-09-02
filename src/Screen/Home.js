@@ -1,11 +1,15 @@
 import React from 'react'
-import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button} from 'react-native'
+import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button, ViewPagerAndroidComponent} from 'react-native'
 import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
+import Cards from '../Components/cards'
 
-const viagens = require('../Components/viagens.json')
-console.log(viagens)
+const viagem = require('../Components/viagens.json')
+
+function returnViagens(data){
+    return <Cards data={data[0]} />
+}
 
 const Home = ({navigation})=>{
     return(
@@ -30,7 +34,8 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                <Image source={{uri: viagens.image}} />
+                <Cards  />
+                {returnViagens(viagem.viagens.voos)}
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
