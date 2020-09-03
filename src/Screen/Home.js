@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button, ViewPagerAndroidComponent} from 'react-native'
+import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button} from 'react-native'
 import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
@@ -8,8 +8,16 @@ import Cards from '../Components/cards'
 const viagem = require('../Components/viagens.json')
 
 function returnViagens(data){
-    return <Cards data={data[0]} />
+    return (<Cards data={data[0]} />)
 }
+
+/* for (var a = 0; a <= 6; a++){
+     <Cards data={data[a]}
+}
+for (var b=0;b <=6; b++){
+    <Cards data={data[b]}
+}
+*/
 
 const Home = ({navigation})=>{
     return(
@@ -34,37 +42,7 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                <Cards  />
                 {returnViagens(viagem.viagens.voos)}
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
