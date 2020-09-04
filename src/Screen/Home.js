@@ -36,6 +36,17 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
+                
+                
+               
+                <View>
+                    <FlatList
+                        data={viagem.viagens.voos}
+                        renderItem={returnVoos}
+                        keyExtractor={data => data.id}
+                        horizontal={true}
+                    />
+                </View>
                 <View style={homeStyle.row} >
                     <View>
                         <Text style={homeStyle.texto1} >Desfrute da sua acomodação a </Text>
@@ -43,30 +54,28 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                <SafeAreaView>
+                <View>
                     <FlatList
-                        data={viagem.viagens.voos}
-                        renderItem={returnVoos}
-                        keyExtractor={data => data.id}
-                    />
-                    <FlatList
+                        horizontal={true}
                         data={viagem.viagens.hoteis}
                         renderItem={returnHoteis}
                         keyExtractor={data => data.id}
                     />
-                </SafeAreaView>
+                </View>
+                    
             </ScrollView>
     </>
     )
 }
 /* {viagem.viagens.voos.map((voos) => {
-                    console.log(voos)
-                    return returnVoos(voos)
-                })}
-                {(viagem.viagens.hoteis.map((hoteis)=>{
-                    console.log(hoteis)
-                    return returnHoteis(hoteis)
-                }))}*/
+        console.log(voos)
+        return returnVoos(voos)
+    })}
+    {(viagem.viagens.hoteis.map((hoteis)=>{
+        console.log(hoteis)
+        return returnHoteis(hoteis)
+    }))}
+*/
 
 const homeStyle = StyleSheet.create({
     image1:{
@@ -91,7 +100,6 @@ const homeStyle = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
     }
-
 })
 
 Home.navigationOptions = ()=> {
@@ -99,6 +107,5 @@ Home.navigationOptions = ()=> {
         tabBarIcon:  <MaterialCommunityIcons name="earth" size={24} color="gray"/>
     }
 }
-
 
 export default Home
