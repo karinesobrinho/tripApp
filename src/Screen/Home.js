@@ -1,30 +1,26 @@
 import React from 'react'
-import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button} from 'react-native'
+import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button, FlatList} from 'react-native'
 import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
 import Cards from '../Components/cards'
 
-const a = ['um', 'dois', 'tres']
-
 const viagem = require('../Components/viagens.json')
 
-function returnVoos(data){
+/*function returnVoos(data){
     return <Cards data={data}/>
 }
 function returnHoteis(data){
     return <Cards data={data} />
-}
-
-/* for (var a = 0; a <= 6; a++){
-     <Cards data={data[a]}
-}
-for (var b=0;b <=6; b++){
-    <Cards data={data[b]}
-}
-*/
+}*/
 
 const Home = ({navigation})=>{
+    const returnVoos = ( data ) => (
+        <Cards data={data} />
+    )
+    const returnHoteis = ( data ) => (
+        <Cards data={data} />
+    )
     return(
         <>
             <View>
@@ -47,31 +43,30 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                {viagem.viagens.voos.map((voos) => {
+                <SafeAreaView>
+                    <FlatList
+                        data={viagem.viagens.voos}
+                        renderItem={returnVoos}
+                        keyExtractor={data => data.id}
+                    />
+                    <FlatList
+                        data={viagem.viagens.hoteis}
+                        renderItem={returnHoteis}
+                        keyExtractor={data => data.id}
+                    />
+                </SafeAreaView>
+            </ScrollView>
+    </>
+    )
+}
+/* {viagem.viagens.voos.map((voos) => {
                     console.log(voos)
                     return returnVoos(voos)
                 })}
                 {(viagem.viagens.hoteis.map((hoteis)=>{
                     console.log(hoteis)
                     return returnHoteis(hoteis)
-                }))}
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-            </ScrollView>
-    </>
-    )
-}
+                }))}*/
 
 const homeStyle = StyleSheet.create({
     image1:{
@@ -107,12 +102,3 @@ Home.navigationOptions = ()=> {
 
 
 export default Home
-
-/**
- const resultados = async resul =>{
-    try{
-        const response = await viagens.get('../Components/viagens.json')
-    }
-    catch(err)
- }
- */

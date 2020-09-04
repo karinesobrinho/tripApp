@@ -3,8 +3,8 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native'
 import { MaterialIcons, Fontisto } from '@expo/vector-icons' 
 
 const Cards = ({data})=> {
-    //console.log(data)
-    const { titulo= '', partida='', valor='', image='', icon='' } = { ...data}
+    console.log(data)
+    const { titulo= '', partida='', valor='', image='', icon='' } = { ...data.item}
     const icone = ()=>{
         if (icon == 'hotel'){
             return <Fontisto name="hotel" size={40} color="gray" />
@@ -14,8 +14,8 @@ const Cards = ({data})=> {
     }
 
     return(
-    <View>
-        <TouchableOpacity key={partida} style={cardStyle.box}
+    <View style={cardStyle.box}>
+        <TouchableOpacity
             onPress={()=> console.log(data)}
         >
             <Image
@@ -24,11 +24,16 @@ const Cards = ({data})=> {
                 uri: image,
                 }}
             />
-            {icone()}
+           
             <Text style={cardStyle.textTitulo} >{titulo}</Text>
             <Text style={cardStyle.textPartida} >{partida}</Text>
-            <Text style={cardStyle.textPadrao} >A partir de</Text>
-            <Text style={cardStyle.textvalor} >{valor}</Text>
+           <View style={cardStyle.row} >
+                {icone()} 
+                <View>
+                    <Text style={cardStyle.textPadrao} >A partir de</Text>
+                    <Text style={cardStyle.textvalor} >{valor}</Text> 
+                </View>
+           </View>
         </TouchableOpacity>
     </View>       
     )
@@ -36,14 +41,14 @@ const Cards = ({data})=> {
 
 const cardStyle = StyleSheet.create({
     imagem:{
-        height: 100,
-        width: 100,
+        height: 190,
+        width: 340,
+        opacity: 0.8
     },
     box:{
         backgroundColor: 'white',
         width: 340,
-        height: 200,
-        padding: 5,
+        height: 250,
         margin: 10,
         borderRadius: 5,
         shadowColor: "#000",
@@ -56,20 +61,31 @@ const cardStyle = StyleSheet.create({
         elevation: 8,
     },
     textTitulo:{
-        fontSize: 20,
-        color: 'gray',
+        fontSize: 25,
+        color: 'white',
+        marginTop: -55,
+        paddingLeft: 5,
     },
     textPartida:{
         fontSize: 15,
-        color: 'gray',
+        color: 'white',
+        marginTop: 0,
+        paddingLeft: 5,
     },
     textPadrao:{
         fontSize: 15,
         color: 'gray',
+        paddingLeft: 5,
+
     },
     textvalor:{
         fontSize: 20,
         color: 'gray',
+        paddingLeft: 5,
+    },
+    row:{
+        flexDirection: 'row',
+        margin:5,
     }
 })
 
