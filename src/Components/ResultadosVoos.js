@@ -10,9 +10,7 @@ const ResultadosVoos = ({ navigation }) => {
     
     return (
         <>
-        <View>
             <Text>Oi</Text>
-        </View>
         </>
     )
 }

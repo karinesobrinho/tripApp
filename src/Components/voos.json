@@ -1,8 +1,8 @@
 [
   {
       "voos" : {
-        "LATAM" : {
           "00001" : {
+            "companiaaerea" : "LATAM",
             "local-destino" : "São Paulo",
             "local-partida" : "Maceió",
             "data-partida" : "02/02/2021",
@@ -19,6 +19,7 @@
             "valor-turista" : "110.00"
           },
           "00002" : {
+            "companiaaerea" : "LATAM",
             "local-destino" : "Pernambuco",
             "local-partida" : "São Paulo",
             "data-partida" : "04/02/2021",
@@ -33,10 +34,9 @@
             "valor-primeira-classe" : "200.00",
             "vagas-turista" : "60",
             "valor-turista" : "150.00"
-          }
-        },
-        "Gol" : {
-          "00001" : {
+          },
+          "00004" : {
+            "companiaaerea" : "Gol",
             "local-destino" : "São Paulo",
             "local-partida" : "Maceió",
             "data-partida" : "string",
@@ -52,7 +52,8 @@
             "vagas-turista" : "60",
             "valor-turista" : "150.00"
           },
-          "00002" : {
+          "00005" : {
+            "companiaaerea" : "Gol",
             "local-destino" : "Pernambuco",
             "local-partida" : "São Paulo",
             "data-partida" : "04/02/2021",
@@ -68,7 +69,8 @@
             "vagas-turista" : "60",
             "valor-turista" : "150.00"
           },
-          "00003" : {
+          "00006" : {
+            "companiaaerea" : "Gol",
             "local-destino" : "São Paulo",
             "local-partida" : "Maceió",
             "data-partida" : "02/02/2021",
@@ -84,7 +86,7 @@
             "vagas-turista" : "60",
             "valor-turista" : "110.00"
           }
-        }
+        
       }
     }
 ]
