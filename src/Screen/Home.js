@@ -5,10 +5,15 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import Header from '../Components/Header'
 import Cards from '../Components/cards'
 
+const a = ['um', 'dois', 'tres']
+
 const viagem = require('../Components/viagens.json')
 
-function returnViagens(data){
-    return (<Cards data={data[0]} />)
+function returnVoos(data){
+    return <Cards data={data}/>
+}
+function returnHoteis(data){
+    return <Cards data={data} />
 }
 
 /* for (var a = 0; a <= 6; a++){
@@ -42,10 +47,14 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                {returnViagens(viagem.viagens.voos)}
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
-                <Text styles={styles.texto} >Home</Text>
+                {viagem.viagens.voos.map((voos) => {
+                    console.log(voos)
+                    return returnVoos(voos)
+                })}
+                {(viagem.viagens.hoteis.map((hoteis)=>{
+                    console.log(hoteis)
+                    return returnHoteis(hoteis)
+                }))}
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>
                 <Text styles={styles.texto} >Home</Text>

@@ -5,7 +5,7 @@ import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 const Cards = ({data})=> {
     //console.log(data)
     const { titulo= '', partida='', valor='', image='', icon='' } = { ...data}
-    const icone = ({data})=>{
+    const icone = ()=>{
         if (icon == 'hotel'){
             return <Fontisto name="hotel" size={40} color="gray" />
         } else{
@@ -14,10 +14,17 @@ const Cards = ({data})=> {
     }
 
     return(
-    <View style={cardStyle.row} >
-        <TouchableOpacity style={cardStyle.box}
+    <View>
+        <TouchableOpacity key={partida} style={cardStyle.box}
             onPress={()=> console.log(data)}
         >
+            <Image
+                style={cardStyle.imagem}
+                source={{
+                uri: image,
+                }}
+            />
+            {icone()}
             <Text style={cardStyle.textTitulo} >{titulo}</Text>
             <Text style={cardStyle.textPartida} >{partida}</Text>
             <Text style={cardStyle.textPadrao} >A partir de</Text>
@@ -47,9 +54,6 @@ const cardStyle = StyleSheet.create({
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
         elevation: 8,
-    },
-    row:{
-        flexDirection: 'row',
     },
     textTitulo:{
         fontSize: 20,
