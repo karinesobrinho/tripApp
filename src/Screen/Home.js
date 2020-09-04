@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, StyleSheet, Text, Image, ScrollView, SafeAreaView, Button, FlatList} from 'react-native'
+import {View, StyleSheet, Text, Image, ScrollView, FlatList} from 'react-native'
 import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
@@ -21,6 +21,9 @@ const Home = ({navigation})=>{
     const returnHoteis = ( data ) => (
         <Cards data={data} />
     )
+    const returnViagens = ( data ) => (
+        <Cards data={data} />
+    )
     return(
         <>
             <View>
@@ -28,7 +31,15 @@ const Home = ({navigation})=>{
             </View>
             <ScrollView>
                 <Image source={require('../images/home.png')} style={homeStyle.image1} />
-                <Text style={homeStyle.texto1} >Aproveite as nossas promoções para planejar sua viagem </Text>
+                <Text style={homeStyle.texto3} >Aproveite as nossas promoções para planejar sua viagem </Text>
+                <View>
+                    <FlatList
+                        horizontal={true}
+                        data={viagem.viagens.geral}
+                        renderItem={returnViagens}
+                        keyExtractor={data => data.id}
+                    />
+                </View> 
                 <View style={homeStyle.row} >
                     <View>
                         <Text style={homeStyle.texto1} >Encontre o melhor preço</Text>
@@ -36,9 +47,6 @@ const Home = ({navigation})=>{
                     </View>
                     <Text style={homeStyle.texto2} > Ver todos </Text>
                 </View>
-                
-                
-               
                 <View>
                     <FlatList
                         data={viagem.viagens.voos}
@@ -61,8 +69,7 @@ const Home = ({navigation})=>{
                         renderItem={returnHoteis}
                         keyExtractor={data => data.id}
                     />
-                </View>
-                    
+                </View>        
             </ScrollView>
     </>
     )
@@ -87,7 +94,6 @@ const homeStyle = StyleSheet.create({
     },
     texto1:{
         fontSize: 18,
-        //margin: 10,
     },
     texto2:{
         color: '#0066FF',
@@ -99,6 +105,11 @@ const homeStyle = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+    },
+    texto3:{
+        marginHorizontal: 10,
+        margin: 2,
+        fontSize:18,
     }
 })
 

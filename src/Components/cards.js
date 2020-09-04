@@ -24,7 +24,6 @@ const Cards = ({data})=> {
                 uri: image,
                 }}
             />
-           
             <Text style={cardStyle.textTitulo} >{titulo}</Text>
             <Text style={cardStyle.textPartida} >{partida}</Text>
            <View style={cardStyle.row} >
@@ -43,7 +42,7 @@ const cardStyle = StyleSheet.create({
     imagem:{
         height: 190,
         width: 340,
-        opacity: 0.8
+        opacity: 0.8,
     },
     box:{
         backgroundColor: 'white',

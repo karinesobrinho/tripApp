@@ -100,6 +100,105 @@
                 "valor":"R$ 200",
                 "icon":"hotel"
             }
+        ],
+        "geral":[
+            {
+                "id": "31",
+                "titulo":"Hoteis em Maceió",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 130",
+                "icon":"hotel"
+            },
+            {
+                "id": "32",
+                "titulo":"Voo para Maceió",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 1300",
+                "icon":"aviao"
+            },
+            {
+                "id": "33",
+                "titulo":"Hoteis em Recife",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 130",
+                "icon":"hotel"
+            },
+            {
+                "id": "34",
+                "titulo":"Voo para Recife",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 1400",
+                "icon":"aviao"
+            },
+            {
+                "id": "35",
+                "titulo":"Hoteis em Orlando",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 130",
+                "icon":"hotel"
+            },
+            {
+                "id": "36",
+                "titulo":"Voo para Cancun",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 1400",
+                "icon":"aviao"
+            },
+            {
+                "id": "37",
+                "titulo":"Hoteis em Cancun",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU" ,
+                "valor":"R$ 130",
+                "icon":"hotel"
+            },
+            {
+                "id": "38",
+                "titulo":"Voo para Orlando",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 1400",
+                "icon":"aviao"
+            },
+            {
+                "id": "39",
+                "titulo":"Hoteis em Paris",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 130",
+                "icon":"hotel"
+            },
+            {
+                "id": "310",
+                "titulo":"Voo para Paris",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 1400",
+                "icon":"aviao"
+            },
+            {
+                "id": "311",
+                "titulo":"Hoteis em Bali",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 140",
+                "icon":"hotel"
+            },
+            {
+                "id": "312",
+                "titulo":"Voo para Miami",
+                "partida": "De São Paulo",
+                "image": "https://vemvoar.voeazul.com.br/wp-content/uploads/2018/08/as-10-rotas-de-aviao-mais-longas-do-mundo.jpeg",
+                "valor":"R$ 2000",
+                "icon":"aviao"
+            },
+            {
+                "id": "313",
+                "titulo":"Hoteis em Miami",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdTrm4lVU5e-IRT5nu0rUXp-ehQhrRN1Bx0A&usqp=CAU",
+                "valor":"R$ 200",
+                "icon":"hotel"
+            }
         ]
     }
 }
