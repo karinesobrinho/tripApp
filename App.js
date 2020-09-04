@@ -21,7 +21,10 @@ import LoginPrincipal from './src/Screen/LoginPrincipal'
 import LoginCriar from './src/Screen/LoginCriar'
 import LoginAcesso from './src/Screen/LoginAcesso'
 import Carregando from './src/Screen/Carregando'
+import PesquisarVoos1 from './src/Components/PesquisarVoos1'
+import PesquisarVoos2 from './src/Components/PesquisarVoos2'
 import ResultadosVoos from './src/Components/ResultadosVoos'
+import ResultadosPesquisa from './src/Screen/ResultadosPesquisa'
 
 const navigator = createStackNavigator({
   //telas de login
@@ -35,6 +38,7 @@ const navigator = createStackNavigator({
   Pacotes:Pacotes,
   Voos: Voos,
   ResultadosVoos: ResultadosVoos,
+  ResultadosPesquisa:ResultadosPesquisa,
   menu: createBottomTabNavigator ({
     Iniciar: Home,
     Contato: Contato,  
