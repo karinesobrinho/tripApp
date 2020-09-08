@@ -31,7 +31,7 @@ const Header = ({navigation})=>{
                 <TouchableOpacity
                     onPress = {()=> navigation.navigate('Atividades')}
                 >
-                    <Fontisto name="compass-alt" size={30} color="black"/>
+                    <Fontisto name="compass-alt" size={30} color="black" />
                 </TouchableOpacity>
             </View>
             <View style={styleHeader.titulo} >
@@ -60,7 +60,6 @@ const styleHeader = StyleSheet.create({
     logo:{
         alignItems:'center',
     },
-
 })
 
 export default withNavigation(Header)

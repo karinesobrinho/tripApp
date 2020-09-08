@@ -17,6 +17,7 @@
     "react": "^16.11.0",
     "react-devtools": "^4.8.2",
     "react-dom": "~16.11.0",
+    "react-horizontal-scrolling-menu": "^0.7.7",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
     "react-native-elements": "^2.2.1",
     "react-native-gesture-handler": "~1.6.0",
@@ -30,6 +31,7 @@
     "react-navigation-stack": "^2.8.2",
     "react-navigation-tabs": "^2.9.0",
     "react-navigator": "0.0.0-0",
+    "react-scroll-horizontal": "^1.6.4",
     "react-stack-navigation": "^1.0.1"
   },
   "devDependencies": {
