@@ -4,26 +4,12 @@ import styles from '../Components/style'
 import { MaterialCommunityIcons } from '@expo/vector-icons' 
 import Header from '../Components/Header'
 import Cards from '../Components/cards'
+import {returnHoteis, returnViagens, returnVoos} from '../Components/returnList'
 
 const viagem = require('../Components/viagens.json')
 
-/*function returnVoos(data){
-    return <Cards data={data}/>
-}
-function returnHoteis(data){
-    return <Cards data={data} />
-}*/
-
 const Home = ({navigation})=>{
-    const returnVoos = ( data ) => (
-        <Cards data={data} />
-    )
-    const returnHoteis = ( data ) => (
-        <Cards data={data} />
-    )
-    const returnViagens = ( data ) => (
-        <Cards data={data} />
-    )
+   
     return(
         <>
             <View>
@@ -38,6 +24,7 @@ const Home = ({navigation})=>{
                         data={viagem.viagens.geral}
                         renderItem={returnViagens}
                         keyExtractor={data => data.id}
+                        showsHorizontalScrollIndicator= {false}
                     />
                 </View> 
                 <View style={homeStyle.row} >
@@ -53,6 +40,7 @@ const Home = ({navigation})=>{
                         renderItem={returnVoos}
                         keyExtractor={data => data.id}
                         horizontal={true}
+                        showsHorizontalScrollIndicator= {false}
                     />
                 </View>
                 <View style={homeStyle.row} >
@@ -68,21 +56,13 @@ const Home = ({navigation})=>{
                         data={viagem.viagens.hoteis}
                         renderItem={returnHoteis}
                         keyExtractor={data => data.id}
+                        showsHorizontalScrollIndicator= {false}
                     />
                 </View>        
             </ScrollView>
     </>
     )
 }
-/* {viagem.viagens.voos.map((voos) => {
-        console.log(voos)
-        return returnVoos(voos)
-    })}
-    {(viagem.viagens.hoteis.map((hoteis)=>{
-        console.log(hoteis)
-        return returnHoteis(hoteis)
-    }))}
-*/
 
 const homeStyle = StyleSheet.create({
     image1:{
