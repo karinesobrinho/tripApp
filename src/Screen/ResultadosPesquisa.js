@@ -1,32 +1,31 @@
 import React, {  useState } from 'react'
-import {View, StyleSheet, Text, Button} from 'react-native'
+import {View, StyleSheet, Text, Button, FlatList} from 'react-native'
 import styles from '../Components/style'
 import { Ionicons } from '@expo/vector-icons'
 import MenuHeader from '../Components/MenuHeader'
 import PesquisarVoos1 from '../Components/PesquisarVoos1'
 import PesquisarVoos2 from '../Components/PesquisarVoos2'
-import useResultados from '../hooks/useResultados'
 import ResultadosVoos from '../Components/ResultadosVoos'
+const dados = require("../Components/voos.json")
 
-const ResultadosPesquisa = ({ termo, termo2, navigation }) => {
-    const [mensagemErro, resultados, pesquisaVoos] = useResultados()
-
+const ResultadosPesquisa = ({ termo, termo2 }) => {
+    
     return (
         <>
             <View>
                 <MenuHeader title="Voos em oferta" />
-                <View style={styles.container}>
-                    <PesquisarVoos1 value={termo}/>
-                    <PesquisarVoos2 value={termo2} />
-                    <Ionicons
-                        name="ios-swap"
-                        style={styles.swap}
-                        onPress={() => swap()}
-                    />
-                </View>
+            </View>
+            <View>
+                <PesquisarVoos1 />
+                <PesquisarVoos2 />
                 {mensagemErro ? <Text>{mensagemErro}</Text> : null} 
-                <Text>Encontrei {resultados.length} resultados.</Text>
-                <ResultadosVoos />
+                <Text>Encontrei {resultados.length} resultados.</Text>            
+                <FlatList
+                    data={dados.voos.localpartida==`${termo}` && dados.voos.localdestino==`${termo2}`}
+                    renderItem={returnViagens}
+                    keyExtractor={data => data.id}
+                    showsVerticalScrollIndicator={false}
+                /> 
             </View>
         </>
     )

@@ -3,7 +3,7 @@ import {View, ImageBackground, TouchableOpacity, Text, Image} from 'react-native
 import { Input, Button } from 'react-native-elements'
 import styles from '../Components/style'
 
-const LoginAcesso = (navigation)=>{
+const LoginAcesso = ({ navigation })=>{
     return(
         <ImageBackground 
                 source={require('../images/img.jpg')} style={styles.image} >

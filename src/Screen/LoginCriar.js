@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, ImageBackground, Image} from 'react-native
 import { Input, Button } from 'react-native-elements'
 import styles from '../Components/style'
 
-const LoginCriar = (navigation)=>{
+const LoginCriar = ({ navigation })=>{
     return( 
         <ImageBackground 
             source={require('../images/img.jpg')} style={styles.image} >

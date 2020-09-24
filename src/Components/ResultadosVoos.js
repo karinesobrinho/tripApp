@@ -1,12 +1,19 @@
-import React, {useState} from 'react'
-import { View, TextInput, Text, TouchableOpacity } from 'react-native'
-import styles from './style'
+import React from 'react'
+import { View, TextInput, Text, TouchableOpacity, FlatList } from 'react-native'
+import cards from './cards'
+//import useResultados from '../hooks/useResultados'
 import { Ionicons } from '@expo/vector-icons'
 
-const ResultadosVoos = () => {
+const ResultadosVoos = ({termo, termo2, results}) => {
+//    const [pesquisaVoos, mensagemErro, resultados] = useResultados();
+
+
     return (
         <>
-            <Text>Oi</Text>
+
+            <Text>Saindo de{termo}; Indo para{termo2}</Text>
+            <Text>{compania}</Text>
+            
         </>
     )
 }

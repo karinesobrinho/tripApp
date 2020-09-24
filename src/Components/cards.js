@@ -5,7 +5,7 @@ import { MaterialIcons, Fontisto } from '@expo/vector-icons'
 const Cards = ({data})=> {
     console.log(data)
     const { titulo= '', partida='', valor='', image='', icon='' } = { ...data.item}
-    const icone = ()=>{
+    const icone = () => {
         if (icon == 'hotel'){
             return <Fontisto name="hotel" size={40} color="gray" />
         } else{
