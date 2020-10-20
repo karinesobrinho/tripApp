@@ -21,6 +21,7 @@ const Ofertas = ()=>{
         </View>
         <MenuOfertas/>
         <FlatList
+            style ={styles.lista}
             data={viagem.viagens.geral}
             renderItem={returnViagens}
             keyExtractor={data => data.id}
@@ -35,6 +36,9 @@ Ofertas.navigationOptions = {
  }
 
 const styles = StyleSheet.create({
+    lista:{
+        alignSelf: 'center',
+    },
     menuSuperior:{
         flexDirection: 'row',
         backgroundColor: '#A9A9A9',
