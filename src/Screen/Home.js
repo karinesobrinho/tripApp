@@ -71,6 +71,7 @@ const homeStyle = StyleSheet.create({
         padding: 5,
         margin: 10,
         borderRadius: 5,
+        alignSelf: 'center',
     },
     texto1:{
         fontSize: 18,
