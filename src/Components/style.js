@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
         width: 200,
     },
     image:{
-        width: 360,
-        height: 800,
+        flex: 1,
+        justifyContent: 'center',
+        resizeMode: 'cover',
     },
     logo:{
         width: 100,
