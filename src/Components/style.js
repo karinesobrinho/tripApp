@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         resizeMode: 'cover',
+        //width: 100,
     },
     logo:{
         width: 100,
